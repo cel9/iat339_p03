@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>P03 Portfolio: Stlye Guide</title>
+
+        <!-- STYLING: Grids, Interactions, Visuals -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- TYPOGRAPHY: Google Fonts, Work Sans, Lato -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    </head>
+
+    <body id="styleguide">
+        <h1 class="main">Style Guide</h1>
+
+        <!-- Nav for Style Guide -->
+        <nav class="sidenav">
+            <p class="sidenav-header logotype">CONTENTS</p>
+
+            <!-- Styleguide Components -->
+            <a href="#deliverables">Deliverables</a>
+            <a href="#colours">Colour Swatches</a>
+
+            <a href="#textComp">Typography</a>
+            <a href="#headings">Headings</a>
+            <a href="#paragraph">Paragraphs</a>
+            <a href="#bulletList">Bulletted List</a>
+            <a href="#numberList">Numbered List</a>
+
+            <a href="#intComp">Interactive Components</a>
+            <a href="#txtLink">In-Text Link</a>
+            <a href="#navButton">Navigation Button</a>
+        </nav>
+
+        <!-- DELIVERABLES -->
+        <section id="deliverables" class="main">
+            <h2>Deliverables</h2>
+
+            <h4>P03: March 14 Deliverable</h4>
+            <ul>
+                <li><a href="https://github.com/cel9/iat339_p03">GitHub Repository</a></li>
+                <li><a href="index.html" target="_blank">Portfolio Website</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+
+            <section id=colours>
+                <h3>Colours</h3>
+
+                <!-- COLOUR CARDS -->
+                <div class="swatch-card">
+                    <img src="img/colours/colour1.jpg" alt="mint">
+                    <div class="desc">
+                        <h4><b>Cool Mint</b></h4>
+                        <p>#DAE6E2</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <img src="img/colours/colour5.jpg" alt="cool grey">
+                    <div class="desc">
+                        <h4><b>Cool Grey</b></h4>
+                        <p>#E3E9F2</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <img src="img/colours/colour2.jpg" alt="cloud grey">
+                    <div class="desc">
+                        <h4><b>Cloud Grey</b></h4>
+                        <p>#A3A4A8</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <img src="img/colours/colour3.jpg" alt="charcoal grey">
+                    <div class="desc">
+                        <h4><b>Charcoal Grey</b></h4>
+                        <p>#404040</p>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <img src="img/colours/colour4.jpg" alt="black">
+                    <div class="desc">
+                        <h4><b>Pure Black</b></h4>
+                        <p>#000000</p>
+                    </div>
+                </div>
+
+                <h4>CSS Selector:</h4>
+                <p>.swatch-card</p>
+
+                <h4>Sample Code:</h4>
+                <pre>
+                <code>
+&lt;div class="swatch-card"&gt;
+    &lt;img src="img/colours/color-1.jpg" alt="cool grey"&gt;
+    &lt;div class="desc"&gt;
+        &lt;h4&gt;&lt;b&gt;Cool Grey&lt;/b&gt;&lt;/h4&gt; 
+        &lt;p&gt;#E3E9F2&lt;/p&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;
+                </code>
+
+                </pre>
+            </section>
+
+        </section>
+
+        <!-- TEXT COMPONENTS: Typography, Text, Paragraphs, Headings -->
+        <section id="textComp" class="main">
+            <h2>Text Components</h2>
+
+            <section>
+                <h3>Typography: </h3>
+                <ul>
+                    <li>Work Sans</li>
+                    <li>Lato</li>
+                </ul>
+
+                <h4>Logotype: Work Sans</h4>
+                <h1 class="logotype">Christy Lum</h1>
+
+                <h4>CSS Selector: </h4>
+                <p>.logotype</p>
+
+                <h4>Sample Code:</h4>
+                <p><code>&lt;h1 class="logotype"&gt; Christy Lum &lt;h1&gt;</code></p>
+            </section>
+
+            <section id="headings">
+                <h3>Heading Levels: Work Sans</h3>
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+
+                <h4>CSS Selectors: </h4>
+                <p>h1, h2, h3</p>
+
+                <h4>Sample Code:</h4>
+                <p><code>&lt;h1&gt; Heading 1 &lt;h1&gt;</code></p>
+                <p><code>&lt;h2&gt; Heading 2 &lt;h2&gt;</code></p>
+                <p><code>&lt;h3&gt; Heading 3 &lt;h3&gt;</code></p>  
+            </section>
+
+            <section id="paragraph">
+                <h3>Paragraph: Lato</h3>
+                <p>Hi there! I'm Christy, a freelance photographer and senior user experience design student at Simon Fraser University in Vancouver, Canada. Since 2014, I’ve collaborated with local makers to craft their own stories by creating compelling visuals and digital content strategies, using their personal narratives to drive and inform the inspiration behind my work.</p>
+
+                <h4>CSS Selector:</h4>
+                <p>p</p>
+
+                <h4>Sample Code:</h4>
+                <p><code>&lt;p&gt; Hi there! I'm Christy, a freelance photographer and senior user experience design student at Simon Fraser University in Vancouver, Canada. Since 2014, I’ve collaborated with local makers to craft their own stories by creating compelling visuals and digital content strategies, using their personal narratives to drive and inform the inspiration behind my work. &lt;/p&gt;</code></p>
+
+            </section>
+
+            <!-- LISTS -->
+            <section id="bulletList">
+                <h3>Bulletted List</h3>
+
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+
+                <h4>CSS Selector:</h4>
+                <p>ul, li</p>
+
+                <h4>Sample Code:</h4>
+                <pre>
+                    <code>
+&lt;ul&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+&lt;/ul&gt;
+                    </code>
+                    </pre>
+            </section>
+
+            <section id="numberList">
+                <h3>Numbered List</h3>
+
+                <ol>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ol>
+
+                <h4>CSS Selector:</h4>
+                <p>ol, li</p>
+
+                <h4>Sample Code:</h4>
+                <pre>
+                    <code>
+&lt;ol&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+&lt;/ol&gt;
+                    </code>
+                    </pre>
+            </section>
+        </section>
+
+        <section id="intComp" class="main">
+            <h2>Interactive Components</h2>
+
+            <section id="txtLink">
+                <h3>In-text Link</h3>
+
+                <p><em>Rendered Element:</em></p>
+                <a href="#" class="in-text-link">An in-text link</a>
+
+                <h4>CSS Selectors:</h4>
+                <p>in-text-link</p>
+
+                <h4>Sample Code:</h4>
+                <p><code>&lt;a href="#" class="in-text-link"&gt; An in-text link &lt;/a&gt;</code></p>
+            </section>
+
+            <section id="navButton">
+                <h3>Navigation Button Style</h3>
+                
+                <p><em>Rendered Element:</em></p>
+                <a class="nav-button">View Project</a>
+                
+                <h4>CSS Selector:</h4>
+                <p>nav-button</p>
+                
+                <h4>Sample Code:</h4>
+                <p><code>&lt;a class="nav-button"&gt; CALL TO ACTION &lt;/a&gt;</code></p>
+                
+            </section>
+        </section>
+    
+    </body>
+
+</html>
