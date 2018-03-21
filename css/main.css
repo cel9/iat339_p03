@@ -93,11 +93,16 @@ GRID ELEMENTS
 
 */
 
+.info-stream{
+    width: 50%;
+    margin: auto;
+}
 
 
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .grid-container-static {
@@ -144,7 +149,7 @@ GRID ELEMENTS
 
 
 .col-full {
-    flex: 1 1 100%;
+    flex: 0 1 100%;
     font-size: 1em;
     text-align: center;
     padding: 15px;
@@ -342,6 +347,8 @@ a:hover {
     font-size: 16px;
     transition: 0.4s;
     cursor: pointer;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
 }
 
 .nav-button:hover {
@@ -413,7 +420,6 @@ HOME ELEMENTS
     opacity: 0.5;
     filter: alpha(opacity=50);
     transition: 0.5s;
-
 }
 
 /*
@@ -426,25 +432,33 @@ GALLERY ELEMENTS
 #gallery-main p{
     font-size: 0.9em;
     font-weight: 100;
-    max-width: 50%;
     text-align: left;
-    margin-left: 26em;
-    margin-top: 3em;
+    padding-bottom: 1em;
 }
 
+#gallery-main h1{
+    border-bottom: 1px solid #e3e9f2;
+    padding-bottom: 1em;
+}
+
+#gallery-main section{
+    border: none;
+}
+
+
 #gallery-feature img{
-    max-width: 50%;
+    width: 100%;
     height: auto;   
 }
 
 
 .gallery-img img{
-    width: 50%;
-    margin: 2em;
-    border: 5px solid black;
+    width: 100%;
     opacity: 1.0;
     filter: alpha(opacity=100);
+    padding-bottom: 5em;
 }
+
 
 /*
 
@@ -468,4 +482,42 @@ REFERENCES ELEMENTS
     color: #DAE6E2;
     transition: 0.5s;
 }
+
+@media only screen and (max-width: 1366px) {
+
+
+}
+@media only screen and (max-width: 1024px) {
+
+
+}
+
+/*tablet*/
+@media only screen and (max-width: 768px) {
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-col-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-stream{
+        width: 80%;
+    }
+
+
+}
+
+/*phone*/
+@media only screen and (max-width: 500px) {
+    .info-stream{
+        width: 100%;
+    }
+
+}
+
+
+
 
