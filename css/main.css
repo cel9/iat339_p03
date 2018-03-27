@@ -506,6 +506,10 @@ REFERENCES ELEMENTS
     .info-stream{
         width: 80%;
     }
+    
+    .home-img img {
+        width: 80%;
+    }
 
 
 }
@@ -513,7 +517,11 @@ REFERENCES ELEMENTS
 /*phone*/
 @media only screen and (max-width: 500px) {
     .info-stream{
-        width: 100%;
+        width: 80%;
+    }
+    
+    .home-img img{
+        width: 80%;
     }
 
 }
