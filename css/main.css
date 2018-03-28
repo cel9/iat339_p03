@@ -325,7 +325,7 @@ a:hover {
     color: #A3A4A8;
     text-decoration:none;
     transition: 0.5s;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -458,9 +458,11 @@ HOME ELEMENTS
     height: auto;   
 }
 
+
 .home-img {
     border-top: 1px solid #e3e9f2;
 }
+
 
 .home-img img{
     margin: 2em;
@@ -554,6 +556,12 @@ GALLERY ELEMENTS
     padding-bottom: 8em;
 }
 
+.gallery-img a:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    transition: 0.5s;
+}
+
 
 /*
 
@@ -561,13 +569,20 @@ REFERENCES ELEMENTS
 
 */
 
+
 #references-main {
-    padding: 2em;
+    /* fade-in on page-load */
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
 }
 
-#references-main h1, h2, p, ul, li{
+
+#references-main h2, p, ul, li{
     text-align: left;
 }
+
 
 #references-main a {
     color: #b3cbc3;
@@ -577,6 +592,15 @@ REFERENCES ELEMENTS
     color: #DAE6E2;
     transition: 0.5s;
 }
+
+
+
+/*
+
+MEDIA QUERIES
+
+*/
+
 
 @media only screen and (max-width: 1366px) {
 
