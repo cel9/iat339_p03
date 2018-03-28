@@ -23,17 +23,25 @@ $(document).ready(function(){
     });
 });
 
-$(window).resize(function(){
+$(window).resize(menuControl);
+$(document).ready(menuControl);
+
+function menuControl(){
    var ww = window.innerWidth;
     if(ww > 1024){
         $(".nav-col-group").css("display", "block");
     }else{
-        if($(".nav-col-menu button").text() == "X"){
-            $(".nav-col-group").css("display", "block");
-            
-        }else{
-            $(".nav-col-group").css("display", "none"); 
-        }
+        $(".nav-col-group").css("display", "none");
+        
+        
+        $(".nav-button").click(function(){
+            if($(".nav-col-group").css("display") == "block") {
+                $(".nav-col-group").css("display", "none");
+            }
+            else {
+                $(".nav-col-group").css("display", "block");
+            }
+        });
     }
     
-});
+}
