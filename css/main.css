@@ -606,6 +606,7 @@ MEDIA QUERIES
 
 
 }
+
 @media only screen and (max-width: 1024px) {
     .nav-col-group{
         flex: 1 1 100%;
@@ -643,8 +644,8 @@ MEDIA QUERIES
     }
 
     .nav-container {
+        width: 100%;
         float: none;
-        display: block;
         text-align: center;
     }
 
@@ -693,6 +694,7 @@ MEDIA QUERIES
         float: none;
         display: block;
         text-align: center;
+        width: 100%;
     }
 
     .footer-container {
@@ -715,11 +717,11 @@ MEDIA QUERIES
     }
 
     .nav-col-menu{
-        padding: 10px;
+        padding: 20px;
     }
 
     .nav-item {
-        float: left;
+        float: none;
     }
 
     pre code{
