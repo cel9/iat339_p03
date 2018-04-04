@@ -27,13 +27,15 @@ $(window).resize(menuControl);
 $(document).ready(menuControl);
 
 function menuControl(){
-   var ww = window.innerWidth;
+    var ww = window.innerWidth;
+
     if(ww > 1024){
         $(".nav-col-group").css("display", "block");
+
     }else{
         $(".nav-col-group").css("display", "none");
-        
-        
+
+
         $(".nav-button").click(function(){
             if($(".nav-col-group").css("display") == "block") {
                 $(".nav-col-group").css("display", "none");
@@ -41,7 +43,9 @@ function menuControl(){
             else {
                 $(".nav-col-group").css("display", "block");
             }
+            menuControl.reset();
+
         });
     }
-    
+
 }
